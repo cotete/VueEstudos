@@ -8,10 +8,7 @@ export default defineNuxtConfig({
     css: '/<rootDir>/assets/css'
   },
   css:['@/assets/css/main.css'],
-  modules: [
-    '@pinia/nuxt',
-    'pinia-plugin-persistedstate/nuxt',
-  ],
+  modules: ['@pinia/nuxt', 'pinia-plugin-persistedstate/nuxt', '@nuxt/ui'],
   pinia:{
     storesDirs : ['./stores/**']
   }
