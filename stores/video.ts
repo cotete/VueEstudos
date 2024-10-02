@@ -13,4 +13,7 @@ export const useVideoStore = defineStore("videos", ()=>{
         favoritos.value = favoritosFiltrados;
       };
       return { adicionarFavorito, deletarFavorito, favoritos };
-})
+},{
+  persist:true
+}
+)
