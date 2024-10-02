@@ -6,7 +6,7 @@
         <div class="videos">
             <div v-for="video in videos" :key="video.id">
             <h2>{{ video.descrição }}</h2>
-            <p>{{ converteDataBrasil(video.data_postagem) }}</p>
+            <p v-data-horario = "'dd/mm/yyyy'">{{ video.data_postagem }}</p>
             <iframe
                 width="550"
                 height="400"
@@ -25,6 +25,10 @@
 <script setup lang="ts">
 import type { video } from '~/interfaces/video';
 
+    const {$toast} = useNuxtApp();
+    onMounted(()=>{
+        $toast.success('Toast adicionado com Sucesso')
+    })
 
     const {adicionarFavorito} = useVideoStore();
     
@@ -55,9 +59,7 @@ import type { video } from '~/interfaces/video';
     },
     ];
 
-    const converteDataBrasil = (dataAtual: string) => {
-        return new Date(dataAtual).toLocaleDateString("pt-BR");
-    };
+    
 </script>
 
 <style scoped>
