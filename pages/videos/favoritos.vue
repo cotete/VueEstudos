@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-    
+
 
     const {favoritos,deletarFavorito} = useVideoStore();
     const converteDataBrasil = (dataAtual: string) => {

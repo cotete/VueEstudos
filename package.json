@@ -13,7 +13,11 @@
     "@nuxt/ui": "^2.18.6",
     "@nuxtjs/i18n": "^9.0.0-rc.1",
     "@pinia/nuxt": "^0.5.5",
+    "dotenv": "^16.4.5",
+    "h3": "^1.12.0",
     "nuxt": "^3.13.0",
+    "oracledb": "^6.6.0",
+    "pg": "^8.13.0",
     "pinia-plugin-persistedstate": "^4.0.2",
     "vue": "latest",
     "vue-router": "latest",
@@ -21,5 +25,8 @@
   },
   "overrides": {
     "vue": "latest"
+  },
+  "devDependencies": {
+    "@types/oracledb": "^6.5.1"
   }
 }
