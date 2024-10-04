@@ -6,6 +6,7 @@
             <template #header>
                 {{ video.descrição }}
             </template>
+            {{ formataData(video.data_postagem) }}
 
             <iframe
                 class="h-48 w-full"

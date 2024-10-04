@@ -36,23 +36,14 @@
       >
         <div class="text-sm lg:flex-grow">
           <NuxtLink
-            to="/"
+          v-for="rota in rotasSistemas()"
+          :key="rota.nome"
+            :to="rota.path"
             class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
           >
-            Home
+            {{rota.nome}}
           </NuxtLink>
-          <NuxtLink
-            to="/videos"
-            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-          >
-            Videos
-          </NuxtLink>
-          <NuxtLink
-            to="/videos/favoritos"
-            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-          >
-            Favoritos
-          </NuxtLink>
+         
         </div>
         <div>
           <ClientOnly>
