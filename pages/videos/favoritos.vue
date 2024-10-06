@@ -19,6 +19,10 @@
 
 <script setup lang="ts">
 
+    definePageMeta({
+        layout:'exibicao',
+    })
+
 
     const {favoritos,deletarFavorito} = useVideoStore();
     const converteDataBrasil = (dataAtual: string) => {
