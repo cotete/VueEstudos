@@ -6,6 +6,10 @@
   </NuxtLoadingIndicator>
 </template>
 
+<script>
+
+</script>
+
 <style>
 
 .page-enter-active,

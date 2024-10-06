@@ -1,6 +1,9 @@
 <template>
     <div>
-
+        <Head>
+            <Title>Clientes</Title>
+            <Meta name="description" content="Teste"/>
+        </Head>
     </div>
 </template>
 
